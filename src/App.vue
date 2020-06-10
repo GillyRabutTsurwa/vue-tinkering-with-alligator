@@ -39,21 +39,18 @@ export default {
 
 .slither-enter-active,
 .slither-leave-active {
-  /* transition: transform 1s; */
-  transition: opacity 1s;
+  transition: transform 1s;
   position: relative;
 }
 
 .slither-enter,
 .slither-leave-to {
-  /* transform: translateX(-100%); */
-  opacity: 0;
+  transform: translateX(-100%);
 }
 
 .slither-enter-to,
 .slither-leave {
-  /* transform: translateX(0); */
-  opacity: 1;
+  transform: translateX(0);
 }
 
 /* NOTE: This works in styling the router-link element because it renders to an a tag at the end */
